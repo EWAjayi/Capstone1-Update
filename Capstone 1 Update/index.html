@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap intergration -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Customized bootstrap intergration -->
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <!-- Custom Theme colors
+  $custom-theme-colors: (
+    "altlight": #FDF4CB,
+    "vanilla": #fcefb4,
+    "pale": #FBEA9E,
+    "jasmine": #FAD871,
+    "naples": #F9DC5C,
+    "xanthous": #F4BB52,
+    "harvest": #C88200,
+  ); -->
+  <title>Itanna Oorun</title>
+  <style>
+    body{
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      background-color: #fdf8e1;
+    }
+    section{
+      padding: 3%;
+      margin: auto;
+    }
+    footer{
+      margin-top: 50px;
+      padding-top: 3%;
+      padding-bottom: 1%;
+      color: #c88200c5;
+      background-color: #FDF4CB;
+    }
+    h1{
+      color: #C88200;
+    }
+    h5{
+      color: #C88200;
+      text-align: center;
+    }
+    p{
+      color: #F4BB52;
+      text-align: center;
+      text-justify: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+  <nav class="navbar navbar-expand-lg bg-naples">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" style="color: #C88200;">
+        <img src="images\Ittana Oorun Logo.png" alt="Itanna Oorun" width="30" height="24"> Ittana Oorun
+      </a>
+
+        <!-- "adding in dropdown menu toggles" -->
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <!-- nav menu items -->
+      <div class="navbar-collapse collapse" id="navbarSupportedContent"">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Login
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="userregistration.html">New Customers</a></li>
+              <li><a class="dropdown-item" href="userlogin.html">Returning Customers</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="checkout.html" style="margin-right: 5px;"><img src="images\shopping-cart-3045-small.png"> Shopping Cart</a>
+          </li>
+        </ul>
+
+          <!-- search bar -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  </header>
+
+  <main>
+  <!-- Requirements:
+  1: At least one image
+  2: At least 2 paragrphs of text
+  3: A bulleted or numbered list -->
+  
+    <section class="content bg-light">
+      <section class="exposition">
+        <h1 class="display-3 text-center" style="max-width: 75%; margin: auto;"> Ittana Oorun: Sunshine in a Bottle!</h1>
+        <!-- page banner -->
+        <div class="container-fluid d-flex align-items-center justify-content-center p-4">
+          <img src="images\Ittana Oorun.png" alt="Banner" width="800" height="300">
+        </div>
+        <!-- Paragraphs -->
+        <p class="text-justify p-4" style="color:#ECC209; font-size: large; max-width: 75%; margin: auto;">
+          In a world filled with confusion and instability, it is comforting to have an escape from the busy work week or lonely night. Here at Ittana Oorun, we sell the highest quality bottled sunlight on the market. 
+        </p>
+        <p class="text-justify p-4" style="color:#ECC209; font-size: large; max-width: 75%; margin: auto;">
+          We are FDA, CDC, WHO, LMNOP approved and regulated. 6/5 therapists recommend our products. Michelle Obama is famously cited for using this product to achieve her eternal youth. Give it a try today!      </p>
+        <!-- List -->
+        <p class="display-6 text-harvest p-5">Reasons to need a lil' light:</p>
+            <ul class="list-group" style="font-size: large; padding-bottom: 5%; margin-left: 4%; color: #D8A443">
+                <li>You will have a pocket full of Sunshine</li>
+                <li>You will aquire a love that is "all mine"</li>
+                <li>Sticks and stone will become unable to shake you</li>
+            </ul>
+      </section>
+    
+      <!-- Featured item section -->
+      <section class="feature p-3 bg-vanilla" style="max-width: 85%;">  
+      <!-- carousel class -->
+      <div id="carouselFeature" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- individual card classes -->
+          <div class="carousel-item active">
+            <div class="cards-wrapper d-flex align-items-center justify-content-center">
+              <div class="card border-primary text-xanthous bg-light" style="width:50%; border-width: 3px; border-radius: 0; box-shadow: 10px 8px 14px 0 rgba(22, 22, 26, 0.18);">
+                <img src="images\Staycation.png" class="card-img-fluid rounded-start d-block w-100" alt="Staycation Bundle">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Staycation Bundle Special</h5>
+                    <div class="d-flex justify-content-around align-items-center p-2" style="font-size: 100%;">
+                      <div>
+                        <span>$2</span>
+                        <button class="border-primary bg-light" style="border-radius: 40%;;">+</button>
+                      </div>
+                      <div>
+                        <p class="card-text p-1"><a href="products.html"><small class="text-muted">Full Product Listing</small></a></p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>    
+          <!-- Card 2 -->
+          <div class="carousel-item">
+            <div class="cards-wrapper d-flex align-items-center justify-content-center">
+              <div class="card border-primary text-xanthous bg-light" style="width:50%; border-width: 3px; border-radius: 0; box-shadow: 10px 8px 14px 0 rgba(22, 22, 26, 0.18);">
+                <img src="images\Positivitea.png" class="card-img-fluid rounded-start d-block w-100" alt="Positivitea">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Positivitea Bundle Special</h5>
+                    <div class="d-flex justify-content-around align-items-center p-2" style="font-size: 100%;">
+                      <div>
+                        <span>$2</span>
+                        <button class="border-primary bg-light" style="border-radius: 40%;">+</button>
+                      </div>
+                      <div>
+                        <p class="card-text p-1"><a href="products.html"><small class="text-muted">Full Product Listing</small></a></p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="carousel-item">
+            <div class="cards-wrapper d-flex align-items-center justify-content-center">
+              <div class="card border-primary text-xanthous bg-light" style="width:50%; border-width: 3px; border-radius: 0; box-shadow: 10px 8px 14px 0 rgba(22, 22, 26, 0.18);">
+                <img src="images\Sleepy.png" class="card-img-fluid rounded-start d-block w-100" alt="Sleepy Bundle">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Sleepy Bundle Special</h5>
+                    <div class="d-flex justify-content-around align-items-center p-2" style="font-size: 100%;">
+                      <div>
+                        <span>$1</span>
+                        <button class="border-primary bg-light" style="border-radius: 40%;">+</button>
+                      </div>
+                      <div>
+                        <p class="card-text p-1"><a href="products.html"><small class="text-muted">Full Product Listing</small></a></p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        <!-- controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFeature" data-bs-slide="prev" style="background-color:#F4BB52; width: 4%; height: 30%; top: 25%;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselFeature" data-bs-slide="next" style="background-color:#F4BB52; width: 4%; height: 30%; top: 25%;">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container-fluid text-center">
+      <!-- column 1 -->
+      <div class="row align-items-center">
+        <div class="col">
+          <h4>Useful Links</h4>
+          <p><small>Privacy Policy</small></p>
+          <p><small>Terms of Use</small></p>
+          <p><small>Return Policy</small></p>
+          <p><small>Shipping</small></p>
+        </div>
+        <!-- column 2 -->
+        <div class="col">
+          <h4>Company</h4>
+          <p><small>About Us</small></p>
+          <p><small>Contact Us</small></p>
+          <p><small>Careers</small></p>
+          <p><small>Affiliate</small></p>
+        </div>
+        <!-- column 3 -->
+        <div class="col">
+          <h4>Follow Us On</h4>
+          <p><small><img src="images\facebook-black-speech-bubble-21715.png"> Facebook</small></p>
+          <p><small><img src="images\youtube-black-speech-bubble-21709.png"> Youtube</small></p>
+          <p><small><a href="https://www.linkedin.com/in/esther-ajayi-580460165/" style="margin-right: 5px;"><img src="images\linkedin-black-speech-bubble-21712.png"></a> Linkedin</small></p>
+          <p><small><img src="images\instagram-black-speech-bubble-21710.png"> Instagram</small></p>
+        </div>
+      </div>
+      <!-- copyright -->
+      <p>&copy; 2023 Itanna Oorun</p>
+    </div>
+  </footer>
+  <!-- java intergration -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
