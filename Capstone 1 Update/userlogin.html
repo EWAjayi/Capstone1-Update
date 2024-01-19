@@ -111,22 +111,30 @@
               <li><a class="dropdown-item" href="userlogin.html">Returning Customers</a></li>
             </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="checkout.html" style="margin-right: 5px;"><img src="images\shopping-cart-3045-small.png"> Shopping Cart</a>
-          </li>
+          
         </ul>
-
-          <!-- search bar -->
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <div class="nav-item">
+          <!-- <button class="btn btn-primary" type="button" >Enable body scrolling</button> -->
+          <a data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" class="nav-link" href="checkout.html" style="margin-right: 5px;"><img src="images\shopping-cart-3045-small.png"> Shopping Cart</a>
+        </li>
       </div>
+      
     </div>
   </nav>
 
   </header>
     <main>
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Your Items</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Item 1</p>
+          <p>Item 2</p>
+          <p>Item 3</p>
+        </div>
+      </div>
     <!-- Requirements:
     1: HTML form w/ user and pass fields
     2: A "remember me" check box
