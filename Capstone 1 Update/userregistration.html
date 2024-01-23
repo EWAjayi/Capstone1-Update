@@ -78,6 +78,28 @@
       padding-top: 3%;
       margin-top: 3%;
     }
+
+    .align-register {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 80px;
+    
+}
+
+.hearing {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+    
   </style>
 </head>
 
@@ -145,29 +167,46 @@
               <div class="form-btn p-3">
                 <span><h3>Register</h3></span>
               </div>
+              <div class="align-register">
+                <div>
               <form class="Register" action="submit_form.html" method="post">
-                <label for="username" style="margin: 3%;">Username:</label>
+                <label for="username" >Username:</label>
                   <input type="text" id="username" name="username" required minlength="4" required maxlength="20">
-                <br>
-                <label for="email" style="margin: 3%;">Email:</label>
+                </div>
+                  <br>
+                  <div>
+                <label for="email">Email:</label>
                   <input type="text" id="email" name="email" required>
-                <br>
-                <label for="dob" style="margin: 3%;">Date of Birth:</label>
+                </div>
+                  <br>
+                  <div>
+                <label for="dob">Date of Birth:</label>
                   <input type="date" id="dob" name="dob" required>
+                </div>
                 <br>
-                <label for="password" style="margin-top: 3%;">Password:</label>
+                <div>
+                <label for="password">Password:</label>
                   <input type="password" id="password" name="password" required minlength="8" aria-describedby="passwordHelpInline">
-                <br>
+                
+                  <br>
                   <span id="passwordHelpInline" class="form-text text-xanthous" style="padding-left: 50px;">Must be 8-20 characters long.</span>
-                <br>
-               <label for="password" style="margin-top: 3%;">Confirm Password:</label>
+                <br></div>
+                <div>
+               <label for="password">Confirm Password:</label>
                   <input type="password" id="password" name="password" required minlength="8" aria-describedby="passwordHelpInline">
-               <br>
-                <input type="submit" value="Register" style="margin: 5%;">
+                </div>
+              </div>
+                  <br>
+                
+                  <div>
+                  
+                <input type="submit" value="Register">
+              </div>
                 <br>
                 <a href="userlogin.html">Already a Member?</a>                
-                </div>
+                
               </form>
+            </div>
             </div>
           </div>
         </div>
@@ -181,6 +220,7 @@
           <div class="row d-flex-inline align-items-center justify-content-center" style="margin: auto;">
             <div class="form-container bg-vanilla">
               <h5>How Did you Hear About Us?</h5>
+              <div class="hearing">
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="social" id="social" value="option1" checked>
                 <label class="form-check-label" for="social">Social Media</label>
@@ -197,6 +237,7 @@
                 <input class="form-check-input" type="radio" name="ad" id="ad" value="option4">
                 <label class="form-check-label" for="ad">Print Ad</label>
               </div>
+            </div>
             </div>
           </div>
         </div>
