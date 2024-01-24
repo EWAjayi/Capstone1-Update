@@ -10,46 +10,11 @@
   <!-- Customized bootstrap intergration -->
   <link rel="stylesheet" href="css/main.min.css">
 
-  <!-- Custom Theme colors
-  $custom-theme-colors: (
-    "altlight": #FDF4CB,
-    "vanilla": #fcefb4,
-    "pale": #FBEA9E,
-    "jasmine": #FAD871,
-    "naples": #F9DC5C,
-    "xanthous": #F4BB52,
-    "harvest": #C88200,
-  ); -->
+  <!-- custom style sheets -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/index.css">
+
   <title>Itanna Oorun</title>
-  <style>
-    body{
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      background-color: #fdf8e1;
-    }
-    section{
-      padding: 3%;
-      margin: auto;
-    }
-    footer{
-      margin-top: 50px;
-      padding-top: 3%;
-      padding-bottom: 1%;
-      color: #c88200c5;
-      background-color: #FDF4CB;
-    }
-    h1{
-      color: #C88200;
-    }
-    h5{
-      color: #C88200;
-      text-align: center;
-    }
-    p{
-      color: #F4BB52;
-      text-align: center;
-      text-justify: auto;
-    }
-  </style>
 </head>
 
 <body>
@@ -57,7 +22,7 @@
   <header>
   <nav class="navbar navbar-expand-lg bg-naples">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html" style="color: #C88200;">
+      <a class="navbar-brand" href="index.html">
         <img src="images\Ittana Oorun Logo.png" alt="Itanna Oorun" width="30" height="24"> Ittana Oorun
       </a>
 
@@ -105,105 +70,109 @@
   2: At least 2 paragrphs of text
   3: A bulleted or numbered list -->
   
-    <section class="content bg-light">
-      <section class="exposition">
-        <h1 class="display-3 text-center" style="max-width: 75%; margin: auto;"> Ittana Oorun: Sunshine in a Bottle!</h1>
+    <section class="hero">
+        <h1 class="display-3"> Ittana Oorun: Sunshine in a Bottle!</h1>
         <!-- page banner -->
-        <div class="container-fluid d-flex align-items-center justify-content-center p-4">
+        <div id="banner" class="container-fluid">
           <img src="images\Ittana Oorun.png" alt="Banner" width="800" height="300">
         </div>
         <!-- Paragraphs -->
-        <p class="text-justify p-4" style="color:#ECC209; font-size: large; max-width: 75%; margin: auto;">
-          In a world filled with confusion and instability, it is comforting to have an escape from the busy work week or lonely night. Here at Ittana Oorun, we sell the highest quality bottled sunlight on the market. 
-        </p>
-        <p class="text-justify p-4" style="color:#ECC209; font-size: large; max-width: 75%; margin: auto;">
-          We are FDA, CDC, WHO, LMNOP approved and regulated. 6/5 therapists recommend our products. Michelle Obama is famously cited for using this product to achieve her eternal youth. Give it a try today!      </p>
-        <!-- List -->
-        <p class="display-6 text-harvest p-5">Reasons to need a lil' light:</p>
-            <ul class="list-group" style="font-size: large; padding-bottom: 5%; margin-left: 4%; color: #D8A443">
-                <li>You will have a pocket full of Sunshine</li>
-                <li>You will aquire a love that is "all mine"</li>
-                <li>Sticks and stone will become unable to shake you</li>
-            </ul>
-      </section>
-    
-      <!-- Featured item section -->
-      <section class="feature p-3 bg-vanilla" style="max-width: 85%;">  
-      <!-- carousel class -->
-      <div id="carouselFeature" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <!-- individual card classes -->
-          <div class="carousel-item active">
-            <div class="cards-wrapper d-flex align-items-center justify-content-center">
-              <div class="card border-primary text-xanthous bg-light" style="width:50%; border-width: 3px; border-radius: 0; box-shadow: 10px 8px 14px 0 rgba(22, 22, 26, 0.18);">
-                <img src="images\Staycation.png" class="card-img-fluid rounded-start d-block w-100" alt="Staycation Bundle">
-                  <div class="card-body">
-                    <h5 class="card-title text-center">Staycation Bundle Special</h5>
-                    <div class="d-flex justify-content-around align-items-center p-2" style="font-size: 100%;">
-                      <div>
-                        <span>$2</span>
-                        <button class="border-primary bg-light" style="border-radius: 40%;;">+</button>
-                      </div>
-                      <div>
-                        <p class="card-text p-1"><a href="products.html"><small class="text-muted">Full Product Listing</small></a></p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>    
-          <!-- Card 2 -->
-          <div class="carousel-item">
-            <div class="cards-wrapper d-flex align-items-center justify-content-center">
-              <div class="card border-primary text-xanthous bg-light" style="width:50%; border-width: 3px; border-radius: 0; box-shadow: 10px 8px 14px 0 rgba(22, 22, 26, 0.18);">
-                <img src="images\Positivitea.png" class="card-img-fluid rounded-start d-block w-100" alt="Positivitea">
-                  <div class="card-body">
-                    <h5 class="card-title text-center">Positivitea Bundle Special</h5>
-                    <div class="d-flex justify-content-around align-items-center p-2" style="font-size: 100%;">
-                      <div>
-                        <span>$2</span>
-                        <button class="border-primary bg-light" style="border-radius: 40%;">+</button>
-                      </div>
-                      <div>
-                        <p class="card-text p-1"><a href="products.html"><small class="text-muted">Full Product Listing</small></a></p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <!-- Card 3 -->
-          <div class="carousel-item">
-            <div class="cards-wrapper d-flex align-items-center justify-content-center">
-              <div class="card border-primary text-xanthous bg-light" style="width:50%; border-width: 3px; border-radius: 0; box-shadow: 10px 8px 14px 0 rgba(22, 22, 26, 0.18);">
-                <img src="images\Sleepy.png" class="card-img-fluid rounded-start d-block w-100" alt="Sleepy Bundle">
-                  <div class="card-body">
-                    <h5 class="card-title text-center">Sleepy Bundle Special</h5>
-                    <div class="d-flex justify-content-around align-items-center p-2" style="font-size: 100%;">
-                      <div>
-                        <span>$1</span>
-                        <button class="border-primary bg-light" style="border-radius: 40%;">+</button>
-                      </div>
-                      <div>
-                        <p class="card-text p-1"><a href="products.html"><small class="text-muted">Full Product Listing</small></a></p>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        <!-- controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFeature" data-bs-slide="prev" style="background-color:#F4BB52; width: 4%; height: 30%; top: 25%;">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselFeature" data-bs-slide="next" style="background-color:#F4BB52; width: 4%; height: 30%; top: 25%;">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      <p>
+        In a world filled with confusion and instability, it is comforting to have an escape from the busy work week or lonely night. Here at Ittana Oorun, we sell the highest quality bottled sunlight on the market. 
+      </p>
+      <p>
+        We are FDA, CDC, WHO, LMNOP approved and regulated. 6/5 therapists recommend our products. Michelle Obama is famously cited for using this product to achieve her eternal youth. Give it a try today!
+      </p>
+
+      <div id="page-break">
+        <img src="images\Ittana Oorun Page Break.png" alt="Banner" width="250" height="250">
       </div>
-      </section>
+
+      <!-- List -->
+      <p class="display-6 p-5 text-golden">Reasons to need a lil' light:</p>
+        <ul class="list-group text-harvest">
+          <li>You will have a pocket full of Sunshine</li>
+          <li>You will aquire a love that is "all mine"</li>
+          <li>Sticks and stone will become unable to shake you</li>
+        </ul>
+    </section>
+  
+    <!-- Featured item section -->
+    <section class="feature bg-vanilla">  
+    <!-- carousel class -->
+    <div id="carouselFeature" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- individual card classes -->
+        <div class="carousel-item active">
+          <div class="cards-wrapper d-flex align-items-center justify-content-center">
+            <div class="card border-primary text-harvest bg-light">
+              <img src="images\Staycation.png" class="card-img-fluid rounded-start d-block w-100" alt="Staycation Bundle">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Staycation Bundle Special</h5>
+                  <div class="d-flex justify-content-around align-items-center p-2" style="font-size: 100%;">
+                    <div>
+                      <span>$2</span>
+                      <button class="border-primary bg-light" style="border-radius: 40%;;">+</button>
+                    </div>
+                    <div>
+                      <p class="card-text p-1"><a href="products.html"><small class="text-muted">Full Product Listing</small></a></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>    
+        <!-- Card 2 -->
+        <div class="carousel-item">
+          <div class="cards-wrapper d-flex align-items-center justify-content-center">
+            <div class="card border-primary text-harvest bg-light">
+              <img src="images\Positivitea.png" class="card-img-fluid rounded-start d-block w-100" alt="Positivitea">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Positivitea Bundle Special</h5>
+                  <div class="d-flex justify-content-around align-items-center p-2" style="font-size: 100%;">
+                    <div>
+                      <span>$2</span>
+                      <button class="border-primary bg-light" style="border-radius: 40%;">+</button>
+                    </div>
+                    <div>
+                      <p class="card-text p-1"><a href="products.html"><small class="text-muted">Full Product Listing</small></a></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="carousel-item">
+          <div class="cards-wrapper d-flex align-items-center justify-content-center">
+            <div class="card border-primary text-harvest bg-light">
+              <img src="images\Sleepy.png" class="card-img-fluid rounded-start d-block w-100" alt="Sleepy Bundle">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Sleepy Bundle Special</h5>
+                  <div class="d-flex justify-content-around align-items-center p-2" style="font-size: 100%;">
+                    <div>
+                      <span>$1</span>
+                      <button class="border-primary bg-light" style="border-radius: 40%;">+</button>
+                    </div>
+                    <div>
+                      <p class="card-text p-1"><a href="products.html"><small class="text-muted">Full Product Listing</small></a></p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      <!-- controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselFeature" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselFeature" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
     </section>
   </main>
 
