@@ -7,16 +7,29 @@ $light: #FDF8E1;
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
 
+//establishing the colors as independant variables
+$altlight: #FDF4CB !default;
+$vanilla: #fcefb4 !default;
+$pale: #FBEA9E !default;
+$jasmine: #FAD871 !default;
+$naples: #F9DC5C !default;
+$saffron: #ECC209 !default;
+$xanthous: #F4BB52 !default;
+$harvest: #C88200 !default;
+$golden: #8F5D00 !default;
+
 // new theme colors
 $custom-theme-colors: (
-"altlight": #FDF4CB,
-"vanilla": #fcefb4,
-"pale": #FBEA9E,
-"jasmine": #FAD871,
-"naples": #F9DC5C,
-"xanthous": #F4BB52,
-"harvest": #C88200,
-);
+  "altlight": $altlight,
+  "vanilla": $vanilla,
+  "pale": $pale,
+  "jasmine": $jasmine,
+  "naples": $naples,
+  "saffron": $saffron,
+  "xanthous": $xanthous,
+  "harvest": $harvest,
+  "golden": $golden
+  ) !default;
 
 // combine theme maps
 $theme-colors: map-merge($custom-theme-colors , $theme-colors);
