@@ -10,46 +10,9 @@
   <!-- Customized bootstrap intergration -->
   <link rel="stylesheet" href="css/main.min.css">
 
-  <!-- Custom Theme colors
-  $custom-theme-colors: (
-    "altlight": #FDF4CB,
-    "vanilla": #fcefb4,
-    "pale": #FBEA9E,
-    "jasmine": #FAD871,
-    "naples": #F9DC5C,
-    "xanthous": #F4BB52,
-    "harvest": #C88200,
-  ); -->
   <title>Itanna Oorun</title>
-  <style>
-    body{
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      background-color: #fdf8e1;
-    }
-    section{
-      padding: 3%;
-      margin: auto;
-    }
-    footer{
-      margin-top: 50px;
-      padding-top: 3%;
-      padding-bottom: 1%;
-      color: #c88200c5;
-      background-color: #FDF4CB;
-      }
-    h1{
-      color: #C88200;
-    }
-    h5{
-      color: #C88200;
-      text-align: center;
-    }
-    p{
-      color: #F4BB52;
-      text-align: center;
-      text-justify: auto;
-    }
-  </style>
+  <!-- custom style sheets -->
+  <link rel="stylesheet" href="css/global.css">
 </head>
 
   <body>
@@ -57,7 +20,7 @@
     <header>
     <nav class="navbar navbar-expand-lg bg-naples">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" style="color: #C88200;">
+        <a class="navbar-brand" href="index.html">
           <img src="images\Ittana Oorun Logo.png" alt="Itanna Oorun" width="30" height="24"> Ittana Oorun
         </a>
   
@@ -70,10 +33,10 @@
         <div class="navbar-collapse collapse" id="navbarSupportedContent"">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="products.html">Products</a>
+              <a class="nav-link active" href="products.html">Products</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -96,7 +59,7 @@
           </form>
         </div>
       </div>
-      <button id="toggleBtn">Toggle Background</button>
+      <button id="toggleBtn" class="btn btn-primary">Toggle Background</button>
     </nav>
     </header>
   
@@ -104,24 +67,23 @@
   <!-- Requirements:
   1: At least 6 products or services with a button that allows them to be ordered or added to cart
   2: Each product/service must be described using a Bootstrap Card w/ img -->
-    <section class="content bg-light">
+    <section class="content">
       <p class="display-6 text-harvest">Assorted Sunlights</p>
       <div class="container">
         <div class="row" style="margin-top: 5%; margin-bottom: 10%;">
-
+          <!-- User Search Input -->
           <div id="inputContainer" class="d-flex justify-content-center">
             <input type="text" id="searchInput" placeholder="Search a Product" class="mb-5" style="max-width: 300px;">
           </div>
           
-          
+          <!-- Card output -->
           <div class="row d-flex justify-content-center">
             <div class="col-sm-4 col-md-12 col-lg-12 d-flex flex-wrap justify-content-center" id="productsContainer"></div>
           </div>
-          
-
 
       </div>
     </section>
+
     <button type="button" class="btn rounded-circle p-0 bg-white border-0" id="btn-back-to-top">
       <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
         <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>

@@ -10,97 +10,11 @@
   <!-- Customized bootstrap intergration -->
   <link rel="stylesheet" href="css/main.min.css">
 
-  <!-- Custom Theme colors
-  $custom-theme-colors: (
-    "altlight": #FDF4CB,
-    "vanilla": #fcefb4,
-    "pale": #FBEA9E,
-    "jasmine": #FAD871,
-    "naples": #F9DC5C,
-    "xanthous": #F4BB52,
-    "harvest": #C88200,
-  ); -->
   <title>Itanna Oorun</title>
-  <style>
-    body{
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      background-color: #fdf8e1;
-    }
-    section{
-      padding: 3%;
-      margin: auto;
-    }
-    footer{
-      margin-top: 50px;
-      padding-top: 3%;
-      padding-bottom: 1%;
-      color: #c88200c5;
-      background-color: #FDF4CB;
-    }
-    h1{
-      color: #C88200;
-    }
-    h2{
-      text-align: center;
-      color: #C88200;
-    }
-    h3{
-      color: #D8A443;
-      text-align: center;
-    }
-    h5{
-      color: #D8A443;
-    }
-    p{
-      color: #F4BB52;
-      text-align: center;
-      text-justify: auto;
-    }
-    table{
-      display:table;
-      width: 100%;
-      max-width: 90%;
-      flex-wrap: wrap;
-      border-collapse: collapse;
-      padding: 5%;
-      margin: auto;
-    }
-    /* account page specs */
-    .account-page{
-      padding: 5% 0;
-    }
-    .form-container{
-      width: 90%;
-      height: 95%;
-      position: relative;
-      text-align: center;
-      padding-bottom: 7%;
-      padding-top: 3%;
-      margin-top: 3%;
-    }
 
-    .align-register {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-around;
-    flex-wrap: wrap;
-    margin-right: 80px;
-    
-}
-
-.hearing {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-    
-  </style>
+  <!-- custom style sheets -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/registration.css">
 </head>
 
 <body>
@@ -147,7 +61,7 @@
         </form>
       </div>
     </div>
-    <button id="toggleBtn">Toggle Background</button>
+    <button id="toggleBtn" class="btn btn-primary">Toggle Background</button>
   </nav>
   </header>
 
@@ -158,10 +72,10 @@
     3: Appropriate HTML validation -->     
 
      <section>
-    <h2>Join the Club</h2>      
+    <h1>Join the Club</h1>      
       <!-- for returning users -->
       <div class="registration-page">
-        <div class="container">
+        <div class="container" id="reg-container">
           <div class="row g-3 align-items-center justify-content-center">
             <div class="form-container bg-altlight">
               <div class="form-btn p-3">
